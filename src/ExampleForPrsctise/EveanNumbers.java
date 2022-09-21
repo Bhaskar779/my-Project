@@ -18,7 +18,7 @@ public class EveanNumbers {
 		int ul= scan.nextInt();
 		return ul;
 	}
-	public void displayEvenNumbers(int lw, int ul) {
+	public int displayEvenNumbers(int lw, int ul) {
 		 sum = 0;
 		 count = 0;
 		for(int i= lw;i<ul; i++) {
@@ -28,11 +28,13 @@ public class EveanNumbers {
 				System.out.println(i+" ");
 				sum = sum+i;
 				count++;
-			}
+			}	
 		}
+		return sum;
 	}
-	public void displaysum() {
+	public int displaysum() {
 		System.out.println("Sum Of Even Numbers = "+sum);
+		return sum;
 	}
 	public void displaycount() {
 		System.out.println("Total number of even nubers in the given range is : "+count);
